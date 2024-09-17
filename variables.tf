@@ -10,7 +10,7 @@ variable "allocated_storage" {
 
 variable "max_allocated_storage" {
   default = 10
-type    = number
+  type    = number
 }
 
 variable "db_name" {
@@ -24,7 +24,7 @@ variable "engine" {
 }
 
 variable "engine_version" {
-  default = "5.7"
+  default = "8.0"
   type    = string
 }
 
