@@ -38,7 +38,7 @@ variable "username" {
   type    = string
 }
 
-variable "password" {
+variable "db_password" {
   default = "none"
   type    = string
 }

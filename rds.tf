@@ -18,12 +18,12 @@ provider "aws" {
 }
 
 resource "aws_db_instance" "mysql_instance" {
-  identifier           = "sst-mysql"
-  instance_class       = "db.t3.medium"
-  engine               = "mysql"
-  engine_version       = "8.0"
+  identifier           = var.identifier
+  instance_class       = var.instance_class
+  engine               = var.engine
+  engine_version       = var.engine_version
   username             = var.username
-  password             = var.password
+  password             = var.db_password
   db_name              = var.db_name
   publicly_accessible  = true
   allocated_storage    = 10
