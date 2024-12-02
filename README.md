@@ -1,12 +1,12 @@
-# Self serice totem Database 
-[![Terraform Plan](https://github.com/evilfeeh/sst-sgdb/actions/workflows/pullrequest.yml/badge.svg)](https://github.com/evilfeeh/sst-sgdb/actions/workflows/pullrequest.yml)
+# Self-service totem Database 
+[![Terraform Plan](https://github.com/fiap-soat-sst/sst-sgdb/actions/workflows/pullrequest.yml/badge.svg)](https://github.com/fiap-soat-sst/sst-sgdb/actions/workflows/pullrequest.yml) [![Terraform Apply](https://github.com/fiap-soat-sst/sst-sgdb/actions/workflows/apply.yml/badge.svg)](https://github.com/fiap-soat-sst/sst-sgdb/actions/workflows/apply.yml)
 
-In order to ensure the righteous functioning of the self service totem application and to follow the requirements of the FIAP to the third phase of postgraduation's Software Architecture course, we're implementing MYSQL database using AWS RDS service.
+To ensure the correct behavior of the self-service totem application and follow the requirements of the FIAP to the third phase of postgraduation's Software Architecture course, we're implementing the MYSQL database using AWS RDS service.
 
-This repository have the terraform files responsible to run and keep updated the database in the cloud.
+This repository has terraform files for running and keeping the database in the cloud.
 
 ## JUSTIFICATION DATABASE
-The Self Service Totem project uses RDS MySQL to store Product, Payment and Order data, due to the need for transactional consistency and complex relationships between these entities, characteristics well supported by relational databases. DynamoDB is used to store user information, taking advantage of its high scalability and low latency for frequent queries and quick access. Authentication is reinforced by the use of a Lambda Authorizer in the authentication flow via API Gateway, ensuring efficient access control and integrated with the rest of the serverless architecture.
+The Self Service Totem project uses RDS MySQL to store Product, Payment, and Order data, due to the need for transactional consistency and complex relationships between these entities, characteristics well supported by relational databases. DynamoDB stores user information, taking advantage of its high scalability and low latency for frequent queries and quick access. Authentication is reinforced using the Lambda Authorizer in the authentication flow via API Gateway, ensuring efficient access control and integration with the rest of the serverless architecture.
 
 ## how to use:
 
@@ -24,7 +24,7 @@ The Self Service Totem project uses RDS MySQL to store Product, Payment and Orde
   terraform validate
 ```
 - Fill the env.auto.tfvars with your values
-- Change the enviroments and provider's properties as you need
+- Change the environments and provider's properties as you need
 
 
 ## RDS MySql
