@@ -1,5 +1,10 @@
-variable "identifier" {
+variable "sst_identifier" {
   default = "sst-db"
+  type    = string
+}
+
+variable "mking_identifier" {
+  default = "sst-mking-db"
   type    = string
 }
 
@@ -13,8 +18,13 @@ variable "max_allocated_storage" {
   type    = number
 }
 
-variable "db_name" {
+variable "sst_db_name" {
   default = "self_service_totem"
+  type    = string
+}
+
+variable "mking_db_name" {
+  default = "sst_ms_making"
   type    = string
 }
 
@@ -33,12 +43,22 @@ variable "instance_class" {
   type    = string
 }
 
-variable "username" {
-  default = "admin"
+variable "sst_username" {
+  default = "mking_username"
   type    = string
 }
 
-variable "db_password" {
+variable "sst_db_password" {
+  default = "none"
+  type    = string
+}
+
+variable "mking_username" {
+  default = "mking_manager"
+  type    = string
+}
+
+variable "mking_db_password" {
   default = "none"
   type    = string
 }
