@@ -1,10 +1,10 @@
 variable "sst_identifier" {
-  default = "sst_db"
+  default = "sst-db"
   type    = string
 }
 
 variable "mking_identifier" {
-  default = "sst_mking_db"
+  default = "sst-mking-db"
   type    = string
 }
 
