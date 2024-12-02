@@ -16,3 +16,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+
+module "dynamoDB-ms-payment" {
+  source = "./modules/payment"
+}
